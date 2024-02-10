@@ -2,13 +2,27 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/liudmyla-project/favicon.svg" />
+    <link rel="icon" type="image/svg+xml" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAJ2SURBVHgB7Zc/aBNRHMe/72pAiJSCUAt2uCo41KLdGnRJBIOgpVE6dNDBFhQnu7o0jQgODmZTCrrEIQXBiKASoY2gYrcoRUSQ3tAhdgrBtELae77vi5cmKcHDJncO/cDl3b135Pf9/UveE2iiP3whLCHHpJAxAWGiDajvywsh8gE7kLByGat+TTg3ZjjWsyk2Z9XLN9FJBJJlu5wo5nLF6uMf4xVRWVS3w/AARmRdrkcowuAEPffKOFGpHQ4awbi+V96byvsV+ICQImJUjEocPrGFrTFDJcSz0DejOiPGGvBPAIRpwGf+bwHdB4LoP9Treo3Prd7/JwGDRwfwLjWH6SsTO9ZePriP9L0728b7evW7vEInhtAWAR8/LeNpdgGTF0e1AYfx6BntafJJujbnGC39LCN6agRtEUBuP3ykx5nrU3qkEEaEwng5TF4arQp+s6AFtk0APUqm0oieHtFeTl+eqHqf2vaeogaPDGjj2Q9Luj7cpsFVFzx+9gJfvq9g5saU9o7GV3+s1daZIsII8KJot1Fw3YZMBYtytbDW4D1hzrPvl2qiGAnOMRJ/Yx9cQs/0+Hm5YT50cqjWflY2s0NYfZ3sSkArxs9WQ31t9i5K5XJtfi5+S691XAAjQCMsvnpYN+wWpoE10Ypd/RSzMxj6ZuPESZUToVaIw5HzEj6y92/ovwC1RbbgE9yeG2pnmoFfSCgBEM/hEzbsRFfJ+mZ1m8d61A4xBA+xpZ0s5F7P6yIMIJBQQx4ewdxvYIM20cWPovX110Hz+LwKyf5OR4KeK+NXGw6n9fSFz6m9uhHn+U2ttuXMwE6TUmakQKaw+Opt/dpv1Zj3POSprpMAAAAASUVORK5CYII=" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vanilla App Template</title>
+    <title>YachtJet</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+      integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     
     <script type="module" crossorigin src="/liudmyla-project/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/liudmyla-project/assets/index-caf15bf7.css">
+    <link rel="stylesheet" href="/liudmyla-project/assets/index-fd232594.css">
   </head>
+
   <body>
     <!--Mobile menu-->
 <div class="mobile-menu-is-hidden">
@@ -21,7 +35,7 @@
     </button>
   </div>
   <ul class="mobile-list-anchor-links">
-    <li><a href="" class="mobile-anchor-link-first-child">About</a></li>
+    <li><a href="" class="mobile-anchor-link">About</a></li>
     <li><a href="" class="mobile-anchor-link">Yachts</a></li>
     <li><a href="" class="mobile-anchor-link">Reviews</a></li>
   </ul>
@@ -54,19 +68,21 @@
   <div class="header-container">
     <a href="" class="header-logo">yachtjet</a>
     <button type="button" class="header-btn-icon">
-      <svg width="28" height="28" class="header-icon">
-        <use href="/liudmyla-project/assets/sprite-9487170c.svg#icon-burger"></use>
-      </svg>
+      <div class="header-burger-icon">
+        <div class="header-burger-icon-item"></div>
+        <div class="header-burger-icon-item"></div>
+      </div>
     </button>
     <ul class="header-list-anchor-links">
-      <li><a href="" class="header-anchor-link">About</a></li>
-      <li><a href="" class="header-anchor-link">Yachts</a></li>
-      <li><a href="" class="header-anchor-link">Reviews</a></li>
+      <li><a href="#about-us" class="header-anchor-link">About</a></li>
+      <li><a href="#our-yachts" class="header-anchor-link">Yachts</a></li>
+      <li><a href="#reviews" class="header-anchor-link">Reviews</a></li>
     </ul>
     <ul class="header-socials-list-links">
       <li class="header-socials-link-item">
         <a
           href="https://www.instagram.com/goitclub/"
+          target="_blank"
           class="header-socials-link"
         >
           <svg width="24" height="24" class="header-socials-icon">
@@ -75,7 +91,11 @@
         </a>
       </li>
       <li class="header-socials-link-item">
-        <a href="https://www.youtube.com/c/GoIT" class="header-socials-link">
+        <a
+          href="https://www.youtube.com/c/GoIT"
+          target="_blank"
+          class="header-socials-link"
+        >
           <svg width="24" height="24" class="header-socials-icon">
             <use href="/liudmyla-project/assets/sprite-9487170c.svg#icon-youtube-black"></use>
           </svg>
@@ -84,6 +104,7 @@
       <li class="header-socials-link-item">
         <a
           href="https://www.facebook.com/goITclub/"
+          target="_blank"
           class="header-socials-link"
         >
           <svg width="24" height="24" class="header-socials-icon">
@@ -94,7 +115,6 @@
     </ul>
   </div>
 </header>
-
 
     <main>
       <section class="hero-section">
@@ -108,7 +128,7 @@
       surrounded by breathtaking views and state-of-the-art amenities.
     </p>
     <button class="hero-button" type="button">
-      <a href="#">Yacht rental</a>
+      <a href="#rent">Yacht rental</a>
     </button>
   </div>
 </section>
@@ -123,32 +143,37 @@
                 </p>
             </div>
         </div>
-        <img class="about-us-img" src="/liudmyla-project/assets/about-us-desktop1440px-1-427b9af1.jpg" alt="evening yacht" width="1340"
-            height="470" />
-        <!--<picture>
-            <source srcset="./img/about-us-desktop1440px-1.jpg 1x, ./img/about-us-desktop1440px-2x.jpg 2x" media="(min-width: 1440px)" />
-            <source srcset="./img/about-us-desktop1280px-1.jpg 1x, ./img/about-us-desktop1280px-2x.jpg 2x" media="(min-width: 1280px)" />
-            <source srcset="./img/about-us-tablet-1.jpg 1x, ./img/about-us-tablet-2x.jpg 2x" media="(min-width: 768px)" />
-            <source srcset="./img/about-us-mobile-1.jpg 1x, ./img/about-us-mobile-2x.jpg 2x" media="(min-width: 375px)" />
-            <source srcset="./img/about-us-mobile-1.jpg 1x, ./img/about-us-mobile-2x.jpg 2x" media="(max-width: 375px)" />
-            <img class="about-us-img" src="../img/about_us_img/about-us-desktop1440px-1.jpg" alt="evening yacht" width="1340" height="470" />
-        </picture>-->
+        <picture>
+            <source srcset="/liudmyla-project/assets/about-us-desktop1440px-1-427b9af1.jpg 1x, /liudmyla-project/assets/about-us-desktop1440px-2x-297536b8.jpg 2x" media="(min-width: 1440px)" />
+            <source srcset="/liudmyla-project/assets/about-us-desktop1280px-1-2abb7d0a.jpg 1x, /liudmyla-project/assets/about-us-desktop1280px-2x-ec16e727.jpg 2x" media="(min-width: 1280px)" />
+            <source srcset="/liudmyla-project/assets/about-us-tablet-1-2d26fe9a.jpg 1x, /liudmyla-project/assets/about-us-tablet-2x-9e7ea7ee.jpg 2x" media="(min-width: 768px)" />
+            <source srcset="/liudmyla-project/assets/about-us-mobile-1-15aa8f8b.jpg 1x, /liudmyla-project/assets/about-us-mobile-2x-d49dad6e.jpg 2x" media="(min-width: 375px)" />
+            <source srcset="/liudmyla-project/assets/about-us-mobile-1-15aa8f8b.jpg 1x, /liudmyla-project/assets/about-us-mobile-2x-d49dad6e.jpg 2x" media="(max-width: 375px)" />
+            <img class="about-us-img" src="/liudmyla-project/assets/about-us-desktop1440px-1-427b9af1.jpg" alt="evening yacht" width="1340" height="470" />
+        </picture>
     </div>
 </section>
-      <section class="yachts">
+
+      <section class="yachts" id="our-yachts">
   <div class="container">
     <h2 class="yachts-title">
       Choose your dream yacht and sail away into the sunset
     </h2>
     <ul class="yachts-list">
       <li class="yachts-list-item">
-        <picture>
+        <!-- <picture>
           <source
-            srcset="/liudmyla-project/assets/admiral-1440-1x-min-7bf251f0.jpg 1x, /liudmyla-project/assets/admiral-1440-2x-min-6387cb96.jpg 2x"
+            srcset="
+              ./img/yachts/admiral-1440-1x-min.jpg 1x,
+              ./img/yachts/admiral-1440-2x-min.jpg 2x
+            "
             media="(min-width: 1440px)"
           />
           <source
-            srcset="/liudmyla-project/assets/admiral-1280-1x-min-547e81b5.jpg 1x, /liudmyla-project/assets/admiral-1280-2x-min-42f61a64.jpg 2x"
+            srcset="
+              ./img/yachts/admiral-1280-1x-min.jpg 1x,
+              ./img/yachts/admiral-1280-2x-min.jpg 2x
+            "
             media="(min-width: 1280px)"
           />
           <source
@@ -159,15 +184,19 @@
             media="(min-width: 768px)"
           />
           <source
-            srcset="/liudmyla-project/assets/admiral-mob-1x-min-1dfd1321.jpg 1x, /liudmyla-project/assets/admiral-mob-2x-min-53031d59.jpg 2x"
+            srcset="
+              ./img/yachts/admiral-mob-1x-min.jpg 1x,
+              ./img/yachts/admiral-mob-2x-min.jpg 2x
+            "
             media="(max-width: 767px)"
           />
-          <img
-            class="yachts-item-img"
-            src="../img/yachts/admiral-1440-2x-min.jpg"
-            alt="Our Yachts Admiral"
-          />
-        </picture>
+          
+        </picture> -->
+        <img
+          class="yachts-item-img"
+          src="/liudmyla-project/assets/admiral-1440-2x-min-6387cb96.jpg"
+          alt="Our Yachts Admiral"
+        />
         <div class="yachts-item-arrow">
           <ul class="yachts-arrow-list">
             <li class="item-arrow">Arrow</li>
@@ -191,51 +220,118 @@
           </ul>
         </div>
       </li>
-      <li class="yachts-list-item"></li>
-      <li class="yachts-list-item"></li>
+      <li class="yachts-list-item item2">
+        <img
+          class="yachts-item-img"
+          src="/liudmyla-project/assets/benetti-1440-2x-min-c2e8b11b.jpg"
+          alt="Our Yachts Benetti"
+        />
+        <div class="yachts-item-arrow">
+          <ul class="yachts-arrow-list">
+            <li class="item-arrow">BENETTI OASIS 40M BO122</li>
+            <li class="item-arrow-yachts">LUXURY YAHTS</li>
+          </ul>
+        </div>
+        <div class="yachts-item-text">
+          <ul class="yachts-item-spec">
+            <li class="item-spec-text">LENGTH</li>
+            <li class="item-spec-text">BUILDER</li>
+            <li class="item-spec-text">BUILT</li>
+            <li class="item-spec-text">GUESTS</li>
+            <li class="item-spec-text">PRICE</li>
+          </ul>
+          <ul class="yachts-item-value">
+            <li class="item-spec-text">41m (133ft)</li>
+            <li class="item-spec-text">Benetti</li>
+            <li class="item-spec-text">2025</li>
+            <li class="item-spec-text">10 in 5 cabins</li>
+            <li class="item-spec-text">€23,210,000</li>
+          </ul>
+        </div>
+      </li>
+      <li class="yachts-list-item item3">
+        <img
+          class="yachts-item-img"
+          src="/liudmyla-project/assets/isa-1440-2x-min-b3ff3f86.jpg"
+          alt="Our Yachts Isa"
+        />
+        <div class="yachts-item-arrow">
+          <ul class="yachts-arrow-list">
+            <li class="item-arrow">BELLE ANNA</li>
+            <li class="item-arrow-yachts">LUXURY YAHTS</li>
+          </ul>
+        </div>
+        <div class="yachts-item-text">
+          <ul class="yachts-item-spec">
+            <li class="item-spec-text">LENGTH</li>
+            <li class="item-spec-text">BUILDER</li>
+            <li class="item-spec-text">BUILT</li>
+            <li class="item-spec-text">GUESTS</li>
+            <li class="item-spec-text">PRICE</li>
+          </ul>
+          <ul class="yachts-item-value">
+            <li class="item-spec-text">50m(155ft)</li>
+            <li class="item-spec-text">ISA</li>
+            <li class="item-spec-text">2012</li>
+            <li class="item-spec-text">12 in 6 cabins</li>
+            <li class="item-spec-text">€21,000,000</li>
+          </ul>
+        </div>
+      </li>
     </ul>
-    <button type="button" class="yachts-btn">Yacht rental</button>
+    <button href="#rent" type="button" class="yachts-btn">Yacht rental</button>
   </div>
 </section>
 
-      <!-- advantages Buhaichuk -->
+      advantages Buhaichuk
 <section class="advantages">
-  <div class="container">
-    <h1 class="head-word">Our Advantages</h1>
-    <ol class="advantages-sector">
-      <!--advantage 1-->
-      <li class="advantages-part">
-        <h2 class="advantages-number">01</h2>
-        <p class="advantages-word">
-          Swimming and water sports: try your hand at water skiing
-        </p>
-      </li>
-      <!--advantage 2-->
-      <li class="advantages-part">
-        <h2 class="advantages-number">02</h2>
-        <p class="advantages-word">Fishing: try to catch your own dinner</p>
-      </li>
-      <!--advantage 3-->
-      <li class="advantages-part">
-        <h2 class="advantages-number">03</h2>
-        <p class="advantages-word">
-          Sightseeing tours: take a shore or island tour, enjoy the views and
-          sunsets from the water
-        </p>
-      </li>
-      <!--advantage 4-->
-      <li class="advantages-part">
-        <h2 class="advantages-number">04</h2>
-        <p class="advantages-word">
-          Rest and relaxation: read a book or listen to music while enjoying the
-          outdoor atmosphere.
-        </p>
-      </li>
-    </ol>
-    <img src="/liudmyla-project/assets/yaht-interior-advantage-1edf0c23.jpg" alt="yaht-interior"
-    class="sec4-photo" width: 540px; height: 424px;>
-  </div>
-</section>
+    <div class="container-sec4 container">
+        <h2 class="head-word">Our Advantages</h2>
+        <ol class="advantages-sector">
+            <!--advantage 1-->
+            <li class="advantages-part">
+                <h3 class="advantages-number">01</h3>
+                <hr class="line">
+                <p class="advantages-word">Swimming and water sports: 
+                    try your hand at water skiing</p>
+                </li>
+            <!--advantage 2-->
+            <li class="advantages-part">
+                <h3 class="advantages-number">02</h3>
+                <hr class="line">
+            <p class="advantages-word">Fishing: try to catch your own dinner</p>
+            </li>
+            <!--advantage 3-->
+            <li class="advantages-part">
+                <h3 class="advantages-number">03</h3>
+                <hr class="line">
+                <p class="advantages-word">Sightseeing tours: take a shore or island tour,
+                enjoy the views and sunsets from the water</p>
+                </li>
+            <!--advantage 4-->
+            <li class="advantages-part">
+                <h3 class="advantages-number">04</h3>
+                <hr class="line">
+                <p class="advantages-word">Rest and relaxation: read a book or
+                listen to music while enjoying the outdoor atmosphere.</p>
+                </li>
+        </ol>
+        <picture>
+            <source srcset="/liudmyla-project/assets/interior-mob-1x-e98c1ac0.jpg 1x, /liudmyla-project/assets/interior-desk1440-2x-4a8d9b18.jpg 2x" 
+            media="(min-width: 320px)"/>
+
+            <source srcset="/liudmyla-project/assets/interior-mob-1x-e98c1ac0.jpg 1x, /liudmyla-project/assets/interior-tablet-2x-b5592284.jpg 2x" 
+            media="(min-width: 320px)"/>
+
+            <source srcset="/liudmyla-project/assets/interior-desk1280-1x-cbe9ce31.jpg 1x, /liudmyla-project/assets/interior-desk1280-2x-e4f7931d.jpg 2x" 
+            media="(min-width: 1280px)"/>
+
+            <source srcset="/liudmyla-project/assets/interior-desk1440-1x-5dbced14.jpg 1x, /liudmyla-project/assets/interior-desk1440-2x-4a8d9b18.jpg 2x" 
+            media="(min-width: 1440px)"/>
+        </picture>
+        <img src="/liudmyla-project/assets/yaht-interior-advantage-1edf0c23.jpg" alt="yaht-interior" class="sec4-photo" width="540"
+            height="424">
+    </div>
       <section class="rent" id="rent">
   <div class="container">
     <ul class="rent__ul">
@@ -389,9 +485,57 @@
 </section>
 
     </main>
+    <footer class="footer">
+  <div class="footer-container">
+    <div class="footer-logo">
+      <p class="footer-logo-text">yachtjet</p>
+      <ul class="footer-list">
+        <li class="footer-link">
+          <a class="footer-link-text" href="#About">About</a>
+        </li>
+        <li class="footer-link">
+          <a class="footer-link-text" href="#Yacht">Yacht</a>
+        </li>
+        <li class="footer-link">
+          <a class="footer-link-text" href="#Reviews">Reviews</a>
+        </li>
+      </ul>
+    </div>
+    <div class="footer-social">
+      <ul class="footer-social-list">
+        <li class="footer-social-link">
+          <a href="https://www.instagram.com/goitclub/" target="_blank" class="footer-link-item">
+            <svg class="social-footer" width="19" height="19">
+              <use href="../img/sprite.svg#icon-ins-white"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="footer-social-link">
+          <a href="https://www.youtube.com/c/GoIT" target="_blank" class="footer-link-item">
+            <svg class="social-footer" width="20" height="20">
+              <use href="../img/sprite.svg#icon-youtube-white"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="footer-social-link">
+          <a href="https://www.facebook.com/goITclub/" target="_blank" class="footer-link-item">
+            <svg class="social-footer" width="20" height="20">
+              <use href="../img/sprite.svg#icon-fb-white"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <p class="footer-text">
+      No matter which yacht you choose, our experienced crew will ensure that your journey is smooth and enjoyable.
+    </p>
+    <P class="footer-text-date">
+      2023. Yacht Adventures<span class="footer-span">Privacy Police</span>
+    </P>
+  </div>
+  </div>
 
-    <!-- Loads the specified .html file -->
-   ENOENT: no such file or directory, open '/home/runner/work/liudmyla-project/liudmyla-project/src/partials/vite-promo.html'
+</footer>
 
     
   </body>
