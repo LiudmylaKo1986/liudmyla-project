@@ -2,6 +2,12 @@
     background-color: #fbfbfb;
     border-radius: 24px;
     max-width: 335px;
+   /* padding-top: 40px;
+    padding-left: 20px;*/
+}
+.about-us-card-container{
+    padding-top: 40px;
+        padding-left: 20px;
 }
 
 .about-us-section {
@@ -12,14 +18,14 @@
     font-weight: 500;
     font-size: 28px;
     line-height: 1;
-    padding-top: 40px;
-    padding-left: 20px;
+   /* padding-top: 40px;
+    padding-left: 20px;*/
     padding-right: 20px;
     margin-bottom: 40px;
 }
 
 .about-us-text-container {
-    padding-left: 20px;
+    /*padding-left: 20px;*/
     padding-right: 20px;
     margin-bottom: 22px;
 }
@@ -52,6 +58,12 @@
 @media screen and (min-width: 768px) {
     .about-us-container {
         max-width: 704px;
+        /*padding-top: 50px;
+        padding-left: 32px;*/
+    }
+    .about-us-card-container{
+        padding-top: 50px;
+        padding-left: 32px;
     }
 
     .about-us-section {
@@ -60,14 +72,14 @@
 
     .about-us-title {
         font-size: 48px;
-        padding-top: 50px;
-        padding-left: 32px;
+       /* padding-top: 50px;
+        padding-left: 32px;*/
         padding-right: 136px;
         margin-bottom: 50px;
     }
 
     .about-us-text-container {
-        padding-left: 32px;
+        /*padding-left: 32px;*/
         padding-right: 283px;
         margin-bottom: 27px;
     }
