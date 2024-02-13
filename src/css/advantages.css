@@ -4,7 +4,7 @@
 }
 
 .container-sec4 {
-    max-width: 335px;
+   /* max-width: 335px;*/
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -28,6 +28,7 @@
     background: #1b414b;
     display: flex;
     flex-wrap: wrap;
+    margin-bottom: 20px;
     /* margin: 0 auto;*/
 }
 
@@ -85,6 +86,7 @@
         width: 704px;
         height: 424px;
         padding: 90px 32px;
+        margin-bottom: 32px;
     }
 
     .container-sec4 {
@@ -127,8 +129,8 @@
     }
 
     .sec4-photo {
-        width: 704px;
-        height: 424px;
+        /*width: 704px;
+        height: 424px;*/
     }
 
     .advantages-part {
@@ -148,6 +150,7 @@
         height: 424px;
         background: #1b414b;
         display: flex;
+        margin-bottom: 0;
     }
 
     .line {
@@ -186,6 +189,8 @@
 
     .sec4-photo {
         border-radius: 30px;
+        width: ;
+        height: ;
     }
 
     .advantages-part {
@@ -194,7 +199,7 @@
 }
 
 /*-----------desktop1440----------*/
-@media screen and (min-width: 1440px) {
+/*@media screen and (min-width: 1440px) {
     .advantages-sector {
         border-radius: 24px;
         width: 768px;
@@ -245,4 +250,4 @@
     .advantages-part {
         width: calc((100% - 24px) / 2);
     }
-}
+}*/

@@ -40,6 +40,13 @@
 
 @media screen and (max-width: 375px) {
     .about-us-container {
+        /*max-width: 335px;*/
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .about-us-container {
         max-width: 335px;
     }
 }
